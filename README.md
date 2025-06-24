@@ -38,7 +38,7 @@ The following **required** functionality is completed:
 
 Here's a walkthrough of implemented required features:
 
-<img src="Flash_quiz/project_3.gif" title="Video Walkthrough" alt="Video Walkthrough" />
+<img src="[Flash_quiz/project_3.gif](https://github.com/ronypy/Flashcard_quiz/blob/main/project_3.gif)" title="Video Walkthrough" alt="Video Walkthrough" />
 
 
 ## Notes
