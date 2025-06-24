@@ -1,0 +1,142 @@
+
+.App {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  text-align: center;
+  padding: 2rem;
+  /* Light neutral fallback if no image is set */
+  background-color: #f6f6f6;
+  min-height: 100vh;
+}
+
+/* HEADER */
+.header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.2em;
+  color: #1a1a1a;
+}
+
+.header .subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+.header .count {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+/* FLASHCARD */
+.flashcard {
+  width: 80%;
+  max-width: 600px;
+  min-height: 180px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: rgba(198, 245, 193, 0.75);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  backface-visibility: hidden;
+}
+
+.flashcard.flipped {
+  transform: rotateY(180deg);
+}
+
+.flashcard span {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  color: #111;
+}
+
+/* NEXT BUTTON */
+.next-btn {
+  margin: 2rem auto 0;
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: background-color 0.2s ease;
+}
+
+.next-btn:hover {
+  background-color: #333;
+}
+/* Container to give the 3D perspective */
+.card-container {
+  perspective: 800px;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* The element that actually flips */
+.card-inner {
+  position: relative;
+  width: 100%;
+  min-height: 180px;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease;
+}
+
+/* Rotate when flipped */
+.card-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+/* Both faces occupy same space */
+.card-face {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  background-color: rgba(198,245,193,0.75);
+  color: #111;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+
+
+/* Put answer on the back face */
+.card-face.back {
+  transform: rotateY(180deg);
+}
+
+/* Next button styling (you can keep yours) */
+.next-btn {
+  margin: 2rem auto 0;
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+.next-btn:hover {
+  background-color: #333;
+}
