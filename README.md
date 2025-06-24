@@ -16,7 +16,7 @@ The following **required** functionality is completed:
   - [x] A list of card pairs is created  
   - [x] The total number of cards in the set is displayed  
   - [x] Card set is represented as an array of objects (`{ question, answer }`)
-- Pre-Flip Guess Input
+- [x] **Pre-Flip Guess Input**
   - [x] A clearly labeled input field and Submit button allow users to enter their guess before viewing the answer.
   - [x] Incorrect submissions trigger visual feedback indicating the guess was wrong.
   - [x] Correct submissions trigger visual feedback indicating the guess was right.
@@ -25,7 +25,7 @@ The following **required** functionality is completed:
 - [x] **Clicking on the card flips it over, showing the corresponding component of the information pair**
   - [x] Clicking the card reveals the back (answer)  
   - [x] Clicking again flips it back to the front (question)
-- [x] Sequential Card Navigation
+- [x] **Sequential Card Navigation**
   - [x] Next ▶ button advances to the next card in order.
   - [x] ◀ Back button returns to the previous card.
   - [x] Navigation buttons are disabled (and visually dimmed) when at the first or last card to prevent wrap‑around.
